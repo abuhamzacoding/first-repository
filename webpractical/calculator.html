@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>calculator</title>
+</head>
+<body>
+  <script>
+      var operator=prompt("enter the operator(either +,-,*,/,%)");
+      var number1=parseInt(prompt("enter the value of first number:"));
+      var number2=parseInt(prompt("enter the value of second number:"));
+      switch(operator)
+      {
+        case'+':
+        result=number1+number2;
+        document.write("addition of: "+ `${number1} + ${number2} = ${result}`);
+        break;
+        
+        case'-':
+        result=number1-number2;
+        document.write("subtraction of:"+ `${number1} - ${number2} = ${result}`);
+        break;
+        
+        case'*':
+        result=number1*number2;
+        document.write("multiplication of:"+ `${number1} * ${number2} = ${result}`);
+        break;
+        
+        case'/':
+        result=number1/number2;
+        document.write("division of:"+ `${number1} / ${number2} = ${result}`);
+        break;
+        
+        case'%':
+        result=number1%number2;
+        document.write("modules of:"+ `${number1} % ${number2} = ${result}`);
+        break;
+        
+        default:
+            document.write("invalid operator");
+
+      }
+  </script>
+    
+</body>
+</html>
